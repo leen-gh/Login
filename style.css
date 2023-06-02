@@ -1,0 +1,161 @@
+:root {
+    /** Fonts **/
+    --textFont: 'Open Sans', sans-serif;
+    --secondaryFont : 'Raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+    /** Colors **/
+    --primary : #FF5B00;
+    --darkGray: #2F2E2E;
+    --lightGray: #cdc7c7;
+ 
+ }
+
+ 
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ body{
+    margin: 0;
+    font-family: var(--secondaryFont);
+    font-size: 1.6rem;
+    line-height: 2;
+    
+}
+
+
+ /*** heading***/
+ h1, h2, h3,h4{
+     font-family: var(--textFont);
+     margin: .5rem 0;
+     line-height: 1.2;
+ }
+ h1{
+     font-size: 6rem;
+
+ }
+
+ h2{
+    font-size: 4.8rem;
+    color: var(--primary);
+ }
+
+ h3{
+     font-size: 3.6rem;
+     
+    }
+ h4{
+     font-size: 3rem;
+ }   
+
+
+ /***Globals***/
+
+ a{
+     text-decoration: none;
+ }
+
+ ul{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ li{
+     list-style: none !important;
+     text-decoration: none !important;
+    
+ }
+
+ img{
+     max-width: 100%;
+     height: auto;
+ }
+ /*header menu*/
+
+ .main-head{
+    top: 0;
+    height: 80px;
+    background: #FF5B00 !important;
+ }
+ .logo{
+    float: left;
+    padding: 5px;
+     
+ }
+ .menu-member{
+    padding: 5px;
+    padding-top: 10px;
+    float: right;
+    
+ }
+.menu-member li{
+    display: inline-block;
+    padding-right: 5px;
+
+}
+.menu-member li a{
+    color: var(--lightGray);
+}
+
+/* forms */
+.wrap{
+    text-align: center;
+    
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, .5fr);
+ 
+ 
+}
+.signup form, 
+.login form{
+    text-align: center;
+    font-family: var(--secondaryFont);
+    
+}
+
+.signup{
+    /*width: 45%;
+    float: left;*/
+    margin-right: 10px;
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+    padding: 10px;
+    background-color: var(--lightGray);
+    border-radius: 10px;
+    
+}
+.signup p {
+    margin: 0;
+}
+.login{
+    /*float: right;
+    width: 45%;*/
+    margin-left: 10px;
+    grid-column: 6 /9 ;
+    grid-row: 2 / 3;
+    padding: 10px;
+    background-color: var(--darkGray);
+    border-radius: 10px;
+   
+}
+.login h3{
+    color: white;
+}
+form input{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.6rem;
+}
+form button{
+    border-radius: 5px;
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+
